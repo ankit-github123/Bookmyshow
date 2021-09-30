@@ -1,0 +1,196 @@
+.accordion_open {
+  color: #f84464 !important;
+}
+
+.accordion_close {
+  color: rgb(102, 102, 102) !important;
+}
+
+.streamMovies_wrapper {
+  background: #f5f5f5;
+  .streamfilter_container {
+    margin-top: 64px;
+    .filter_section {
+      & > div:first-child {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        color: rgb(51, 51, 51);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+
+      & > .moviesfilter_wrapper {
+        & > .accordion_wrapper {
+          background: white;
+          padding: 10px 10px;
+          margin: 12px 0;
+
+          & > div {
+            display: flex;
+            justify-content: space-between;
+
+            & > div:first-child {
+              display: flex;
+
+              & > div:first-child {
+              }
+
+              & > .accordion_title {
+                font-size: 14px;
+                margin-left: 8px;
+                align-self: center;
+              }
+            }
+
+            & > .accordion_clear {
+              font-size: 12px;
+              cursor: pointer;
+              align-self: center;
+            }
+          }
+          & > div {
+            display: flex;
+            flex-flow: column wrap;
+            flex-direction: row;
+            // margin: 8px 0;
+            & > .accordion_data {
+              padding: 5px 10px;
+              word-break: break-word;
+              color: rgb(220, 53, 88);
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: normal;
+              line-height: 1.43;
+              background-color: rgb(255, 255, 255);
+              border: 1px solid rgb(238, 238, 238);
+              margin: 4px 4px 4px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .filtered_section {
+      & > div:first-child {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        color: rgb(51, 51, 51);
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+
+      .filteredlabel {
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: row;
+        margin: 8px 0;
+
+        & > button {
+          font-size: 12px;
+          cursor: pointer;
+          border-radius: 16px;
+          padding: 7px 12px;
+          background-color: white;
+          border: 1px solid #cccccc;
+          color: #fc2232;
+          margin: 0 8px 10px 0;
+          outline: none;
+        }
+
+        & > button:active,
+        button:focus-within {
+          color: white;
+          background: #fc2232;
+          border-color: #fc2232;
+        }
+      }
+      .filtered_data_wrapper {
+        margin-bottom: 40px;
+        margin-top: 12px;
+        .moviesfilteredImg {
+          border-radius: 15px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          width: 100%;
+          height: 317px;
+          background-position: center;
+          position: relative;
+
+          .moviefiltered_time {
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: black;
+            padding: 6px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+          }
+        }
+
+        & > .moviefiltered_label {
+          margin: 8px 0px 4px;
+          word-break: break-word;
+          color: rgb(0, 0, 0);
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.33;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        & > .moviefiltered_language {
+          color: rgb(102, 102, 102);
+          font-size: 16px;
+        }
+
+        & > .moviefiltered_category {
+          margin: 0px 0px 4px;
+          word-break: break-word;
+          color: rgb(102, 102, 102);
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.43;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+
+        & > .moviefiltered_rate {
+          margin: 0px 0px 4px;
+          word-break: break-word;
+          color: rgb(102, 102, 102);
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.43;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+
+        & > .moviefiltered_watchon {
+          margin: 0px 0px 4px;
+          word-break: break-word;
+          color: rgb(51, 51, 51);
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 1.5;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}

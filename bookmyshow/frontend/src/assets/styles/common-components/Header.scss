@@ -1,0 +1,169 @@
+$headerBg: #333545;
+.header_wrapper {
+  background-color: $headerBg;
+  width: 100%;
+  height: 64px;
+  padding: 0px;
+
+  & > div {
+    max-width: 1240px;
+    width: 92%;
+    margin: 0px auto;
+    height: 100%;
+
+    & > div {
+      display: flex;
+      height: 100%;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+
+      & > .headerleft_wrap {
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+
+        & > .logo_wrap {
+          background-image: url("../../images/logo.jpg");
+          background-repeat: no-repeat;
+          background-size: 125px;
+          height: 36px;
+          width: 125px;
+          align-self: center;
+        }
+      }
+
+      & > .headerright_wrap {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+// search
+.header_search_wrapper {
+  align-self: center;
+  margin: 0 15px;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  width: 70%;
+  padding: 7px 10px;
+  & > i {
+    color: rgb(153, 153, 153);
+    align-self: center;
+  }
+  & > input {
+    border: none;
+    background: white;
+    box-shadow: none;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    outline: none;
+    width: 100%;
+    padding: 0 15px;
+    align-self: center;
+  }
+}
+
+// location
+.location_wrapper {
+  align-self: center;
+  .location_select {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    position: relative;
+    width: 72px;
+    cursor: pointer;
+  }
+
+  .location_select:after {
+    display: block;
+    content: "";
+    position: absolute;
+    inset: -2px 0px 0px;
+    margin: auto 0px auto auto;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid rgb(255, 255, 255);
+  }
+}
+
+.locationmodal_wrapper {
+  background: white;
+  z-index: 5;
+  width: 70%;
+  border-radius: 10px;
+  padding: 15px;
+  & > div {
+    position: relative;
+    width: 100%;
+    & > .close_modal {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+// authentication
+.auth_btn_wrapper {
+  align-self: center;
+}
+
+.authmodal_wrapper {
+  background: white;
+  z-index: 3;
+  width: 30%;
+  border-radius: 10px;
+  padding: 15px;
+  & > div {
+    position: relative;
+    width: 100%;
+    & > .close_modal {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+// sidenav
+
+.hamberger_wrapper {
+  align-self: center;
+  margin: 0 8px;
+  & > div {
+    & > div {
+      width: 20px;
+      height: 1.6px;
+      background: white;
+      margin: 4px 0;
+    }
+  }
+}
+
+.sidenav_wrapper {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  .menunav {
+    background: white;
+    padding: 15px;
+    position: absolute;
+    bottom: -92px;
+    color: #333545;
+    font-size: 12px;
+    width: 116px;
+
+    & > div{
+      text-align: center;
+      border-bottom: 1px solid #eeeeee;
+    }
+  }
+}

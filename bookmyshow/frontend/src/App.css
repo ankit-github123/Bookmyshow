@@ -1,0 +1,123 @@
+/* common styling */
+/* container styling */
+
+.container_wrap {
+  max-width: 1240px;
+  width: 92%;
+  margin: 0px auto;
+  height: 100%;
+}
+
+.button_default {
+  background: #f84464;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  align-self: center;
+}
+
+.modal_overlayLayer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  align-items: center;
+}
+
+.form_route_text{
+  color: red;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.react-tabs__tab {
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  background: 0 0;
+  font-size: 11px;
+  padding: 6px 10px;
+  margin: 0 5px;
+  color: #666;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0px solid #aaa !important;
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.react-tabs__tab--selected {
+  background: #f84464 !important;
+  color: #fff !important;
+  border-color: #f84464 !important;
+  border-radius: 16px !important;
+  border: 1px solid #ccc !important;
+  font-size: 11px;
+  padding: 10px 10px !important;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* slick styling */
+.slick-dots {
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 25px !important;
+  height: 20px !important;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 7px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #9f9d9a !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .hide_mobile_responsive {
+    display: none;
+  }
+}

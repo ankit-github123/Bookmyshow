@@ -1,0 +1,106 @@
+.seat {
+  background-color: white;
+  border-radius: 2px;
+  border: 0.8px solid green;
+  color: green;
+  height: 25px;
+  width: 25px;
+}
+
+.seat--reserved {
+  background-color: #eeeeee;
+  border: 0.8px solid #eeeeee;
+}
+
+.seat--selected {
+  background-color: green;
+}
+
+.seat--enabled:hover {
+  background-color: green;
+  color: white;
+}
+
+.seat:focus-visible {
+  background-color: green;
+  color: white;
+}
+.seat-picker:last-child {
+  margin: auto;
+  width: 480px !important;
+  margin-bottom: 8px !important;
+}
+
+.seat-picker > *:not(:last-child) {
+  width: 480px !important;
+}
+
+.seat-picker__row {
+}
+
+.seat-picker__row__number {
+}
+
+div.blank {
+  display: none;
+}
+//
+.seat-picker {
+  margin-bottom: 8px !important;
+}
+
+.seat-picker__row__number {
+  font-weight: 600;
+  margin: 0 25px !important;
+}
+
+.seat--north {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.seat-picker > *:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.seat-picker__row > *:not(:last-child) {
+  margin-right: 8px !important;
+}
+
+// custom style
+.seatingarrangement_wrap {
+  background-color: #fafafa;
+  position: relative;
+
+  .movie_detail_wrapper{
+    background: #1F2533;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+
+  .screenImg {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .screenimg_belowtxt {
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    padding-bottom: 3rem;
+  }
+
+  .timinginfo_wrapper {
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+    height: 30px;
+    padding: 10px 7px;
+    background: #F5F5FA;
+  }
+}

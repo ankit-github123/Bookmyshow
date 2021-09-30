@@ -1,0 +1,4 @@
+export const SET_TOKEN = "SET_TOKEN";
+export const SET_LOCATION = "SET_LOCATION";
+export const SET_REGISTRATION_MODAL = "SET_REGISTRATION_MODAL";
+export const SET_LOGIN_MODAL = "SET_LOGIN_MODAL";

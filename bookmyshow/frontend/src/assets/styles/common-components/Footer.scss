@@ -1,0 +1,121 @@
+// eventenroll
+$event_enroll_bgcolor: #313035;
+.eventenroll_wrapper {
+  background: $event_enroll_bgcolor;
+  .eventenroll_container {
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    & > div {
+      display: flex;
+      color: white;
+      align-self: center;
+      & > .enroll_img {
+        background-image: url("../../images/common/footer/enroll.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
+        align-self: center;
+      }
+
+      & > p:nth-child(2) {
+        margin: 0px 16px 0px 4px;
+        font-weight: 600;
+        align-self: center;
+      }
+
+      & > p:last-child {
+        font-weight: 400;
+        align-self: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// contactus
+
+$contact_bgcolor: #404043;
+.contact_wrapper {
+  background: $contact_bgcolor;
+  .contact_container {
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+
+    & > .contactImg {
+      height: 80px;
+      background-size: 125px;
+      background-repeat: no-repeat;
+      width: 125px;
+    }
+  }
+}
+
+// footer
+
+$footerbg: #333338;
+$footersaperator: rgb(93, 93, 95);
+.footer_wrapper {
+  background: $footerbg;
+
+  .footer_divider {
+    display: flex;
+    padding: 2rem 0;
+    & > div:first-child,
+    div:last-child {
+      width: 90%;
+      height: 0.8px;
+      background: $footersaperator;
+      margin: auto 36px;
+    }
+
+    .logo {
+      background-image: url("../../images/logo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 240px;
+      height: 30px;
+    }
+  }
+
+  .footer_social_site {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+    & > div {
+      background: rgb(93, 93, 95);
+      border-radius: 50%;
+      width: 37px;
+      height: 37px;
+      display: flex;
+      margin: 0 8px; 
+
+      & > i {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 22px;
+        margin: 0 8px;
+      }
+    }
+    & > div:hover{
+        background: white;
+    }
+  }
+
+  .copywrite_section{
+      display: block;
+      text-align: center;
+      padding:0 40px 2rem 40px;
+
+      & > div{
+        font-size: 11px;
+        color: rgb(102, 102, 102);
+        text-align: center;
+      }
+  }
+}
